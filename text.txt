@@ -1,4 +1,4 @@
-Hello World,
-  My name is VIM, I am here for all of your terminal text editing needs.
-  If you ever want to edit something on a server and don't have access to a text editor you will need to use something like me or NANO.
+Hello World,<br>
+  My name is VIM, I am here for all of your terminal text editing needs.<br>
+  If you ever want to edit something on a server and don't have access to a text editor you will need to use something like me or NANO.<br>
 That's it, bye...

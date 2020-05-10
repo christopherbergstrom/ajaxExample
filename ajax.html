@@ -22,19 +22,25 @@
       box-shadow: 0px 5px 10px #ccc;
     }
 
-    #ajaxTarget {}
+    #ajaxTarget {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 60vw;
+      margin: auto;
+      font-size: 18px;
+      line-height: 26px;
+    }
   </style>
 </head>
 
 <body>
   <button id="ajaxButton">Get Some AJAX</button>
-  <div id="ajacTarget"></div>
+  <div id="ajaxTarget"></div>
   <script>
     $(document).ready(() => {
       $("#ajaxButton").click(() => {
         $.get("text.txt", (data, status) => {
           console.log(status);
-
+          $("#ajaxTarget").html(data);
         });
       });
     });
