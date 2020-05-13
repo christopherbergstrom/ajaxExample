@@ -39,8 +39,11 @@
     $(document).ready(() => {
       $("#ajaxButton").click(() => {
         $.get("text.txt", (data, status) => {
-          console.log(status);
-          $("#ajaxTarget").html(data);
+          if (status == "success") {
+            $("#ajaxTarget").html(data);
+          } else {
+            $("#ajaxTarget").html("Sorry, but it seems you have encountered an error, check your code");
+          }
         });
       });
     });
